@@ -1,0 +1,188 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f0f0f5 30%, #e0e4e9 100%);
+    background-attachment: fixed;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://via.placeholder.com/1920x500'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    color: #1e1b1b;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.review-section {
+    margin-top: 30px; /* Adjust the margin to create space between hero section and review cards */
+}
+/* Review Cards */
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Album Cover Image */
+.review-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 4px solid #f39c12;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.review-card img:hover {
+    transform: scale(1.05);
+}
+
+.review-card .card-content {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+.review-card .card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.review-card .card-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.review-card .card-content .rating {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f39c12;
+}
+
+/* Featured Review Section */
+.featured-review {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px 0;
+    text-align: center;
+}
+
+.featured-review h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 5px solid #f39c12;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #f39c12;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scrollTopBtn:hover {
+    background-color: #f39c12;
+}
+
